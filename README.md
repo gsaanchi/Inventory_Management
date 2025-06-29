@@ -61,7 +61,7 @@ Queries use CTEs, indexing, subqueries, and window functions for scalability.
 
 A Power BI dashboard (`dashboard.pbix`) was developed to communicate insights with decision-makers.
 
-- ![Inventory Turnover Flags](images/turnover_flag.png)
+- https://github.com/gsaanchi/Inventory_Management/blob/main/images/Screenshot%202025-06-29%20192624.png
 - ![Inventory vs Sales Regionwise](images/inventory_sales_region.png)
 - ![Promotion vs Non-Promotion Impact](images/promo_impact.png)
 
