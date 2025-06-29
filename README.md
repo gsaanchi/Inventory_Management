@@ -1,3 +1,4 @@
+
 # SQL-Based Inventory Optimization for Urban Retail Co.
 
 ## Overview
@@ -32,59 +33,58 @@ The base dataset `inventory_forecasting.csv` contains transactional inventory da
 
 ## Data Processing and Database Schema
 
-- The CSV was parsed, cleaned, and normalized into a relational SQLite schema.
+- The raw CSV was parsed, cleaned, and normalized into a relational SQLite schema.
 - Core tables include:
-
-  - `retail_store`: Original data (raw staging table)
-  - `Inventory`: Cleaned stock transactions
+  - `retail_store`: Original staging data
+  - `Inventory`: Cleaned transactional records
   - `Pricing`: Price, discount, and forecast information
   - `Stores`, `Products`: Dimension tables
   - `Flagged`: Automatically detected problem SKUs (overstock, understock)
-  - `Products_temp`: Helper table used in transformation
+  - `Products_temp`: Helper table for intermediate operations
 
-All schema definitions and population queries are available in `script.sql`.
+> All schema definitions and population queries are available in `script.sql`.
+
+### Schema Diagram
+
+![Schema Diagram](https://github.com/gsaanchi/Inventory_Management/blob/main/images/QuickDBD-export.png)
 
 ## SQL Analytics Modules
 
-Advanced SQL queries were designed to generate the following insights:
+Advanced SQL queries were designed to extract key inventory insights, including:
 
-- **Stock Level Monitor** – Daily inventory balance by SKU and store.
-- **Low Inventory Detector** – Items falling below reorder points.
-- **Reorder Point Estimator** – Using moving average of past sales.
-- **Inventory Turnover Calculator** – SKU-wise turnover ratios.
-- **Stock Aging Summary** – Flags stagnant SKUs.
-- **Business KPIs** – Stockout ratio, average stock level, category coverage.
+- **Stock Level Monitor** – Tracks daily inventory by SKU and store
+- **Low Inventory Detector** – Flags SKUs below reorder thresholds
+- **Reorder Point Estimator** – Calculates reorder triggers using moving averages
+- **Inventory Turnover** – SKU-wise turnover rate analysis
+- **Stock Aging** – Identifies stagnant or obsolete inventory
+- **Business KPIs** – Stockout ratios, inventory levels, and coverage metrics
 
-Queries use CTEs, indexing, subqueries, and window functions for scalability.
+Queries utilize CTEs, subqueries, indexes, and window functions to ensure efficiency and scalability.
 
 ## Dashboard and Visualizations
 
-A Power BI dashboard (`dashboard.pbix`) was developed to communicate insights with decision-makers.
-<img titlte = "something" alt="dashboard" src = "https://github.com/gsaanchi/Inventory_Management/blob/main/images/Screenshot%202025-06-29%20192624.png"></img>
-- ![Inventory vs Sales Regionwise](images/inventory_sales_region.png)
-- ![Promotion vs Non-Promotion Impact](images/promo_impact.png)
+A Power BI dashboard (`dashboard.pbix`) was developed to communicate insights visually. Key pages include:
 
-Dashboard covers:
-
-- Daily sales vs inventory comparison
-- Stockout and overstock distribution by category
-- Promotion uplift visualization
-- Forecast vs actuals across geographies
+| Screenshot | Description |
+|-----------|-------------|
+| ![Dashboard1](https://github.com/gsaanchi/Inventory_Management/blob/main/images/Screenshot%202025-06-29%20192624.png) | **Overview**: Daily sales vs inventory, overall trends |
+| ![Dashboard2](https://github.com/gsaanchi/Inventory_Management/blob/main/images/Screenshot%202025-06-29%20192649.png) | **Categorical View**: Overstock/stockout distribution |
+| ![Dashboard3](https://github.com/gsaanchi/Inventory_Management/blob/main/images/Screenshot%202025-06-29%20192730.png) | **Forecasting**: Promo uplift, forecast vs actual demand |
 
 ## Key Business Insights
 
-- Electronics and grocery categories often experience stockouts in metro zones.
-- Several SKUs show high aging in southern warehouses—indicating overstocking.
-- Promotion days often see demand surges without matching restocks.
-- Dynamic reorder points based on past demand yield better replenishment triggers.
+- **Stockouts** are frequent in electronics and grocery categories across metro locations.
+- **Overstocking** is observed in southern warehouses for slow-moving SKUs.
+- **Restocking delays** during promotions lead to missed revenue opportunities.
+- **Dynamic reorder points** aligned with demand seasonality reduce inefficiencies.
 
 ## Final Deliverables
 
-- `script.sql` – Complete SQL schema and analytics queries
-- `inventory_forecasting.csv` – Raw transactional data
--  `dashboard.pbix` – Final Power BI dashboard
--  `Report.pdf` – 2-page executive summary with visuals and recommendations
--  `README.md` – Documentation with insights and methodology
+- `script.sql` – Full SQL schema and analytics queries
+- `inventory_forecasting.csv` – Raw input data
+- `dashboard.pbix` – Power BI dashboard (interactive)
+- `Report.pdf` – Executive summary with analysis and recommendations
+- `README.md` – Documentation
 
 ## Folder Structure
 
@@ -95,20 +95,21 @@ Dashboard covers:
 ├── dashboard.pbix
 ├── Report.pdf
 ├── README.md
-├── images/
-│   ├── turnover_flag.png
-│   ├── inventory_sales_region.png
-│   └── promo_impact.png
+└── images/
+    ├── QuickDBD-export.png
+    ├── Screenshot 2025-06-29 192624.png
+    ├── Screenshot 2025-06-29 192649.png
+    └── Screenshot 2025-06-29 192730.png
 ```
 
 ## Tools Used
 
 - SQL (SQLite)
 - Power BI
-- VSCode (SQL + schema handling)
+- VS Code
 
 ## Author
 
-Saanchi Gupta  
+**Saanchi Gupta**  
 Consulting & Analytics Club, IIT Guwahati  
 GitHub: [@gsaanchi](https://github.com/gsaanchi)
