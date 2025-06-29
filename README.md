@@ -67,7 +67,7 @@ A Power BI dashboard (`dashboard.pbix`) was developed to communicate insights vi
 
 | Screenshot | Description |
 |-----------|-------------|
-| ![Dashboard1](https://github.com/gsaanchi/Inventory_Management/blob/main/images/Screenshot%202025-06-29%20192624.png) | **Overview**: Daily sales vs inventory, overall trends |
+| ![Dashboard1](https://github.com/gsaanchi/Inventory_Management/blob/main/images/Screenshot%202025-06-29%20192624.png, width="600") | **Overview**: Daily sales vs inventory, overall trends |
 | ![Dashboard2](https://github.com/gsaanchi/Inventory_Management/blob/main/images/Screenshot%202025-06-29%20192649.png) | **Categorical View**: Overstock/stockout distribution |
 | ![Dashboard3](https://github.com/gsaanchi/Inventory_Management/blob/main/images/Screenshot%202025-06-29%20192730.png) | **Forecasting**: Promo uplift, forecast vs actual demand |
 
