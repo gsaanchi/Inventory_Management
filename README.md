@@ -65,11 +65,11 @@ Queries utilize CTEs, subqueries, indexes, and window functions to ensure effici
 
 A Power BI dashboard (`dashboard.pbix`) was developed to communicate insights visually. Key pages include:
 
-| Screenshot | Description |
-|-----------|-------------|
-| ![Dashboard1](https://github.com/gsaanchi/Inventory_Management/blob/main/images/Screenshot%202025-06-29%20192624.png) | **Overview**: Daily sales vs inventory, overall trends |
-| ![Dashboard2](https://github.com/gsaanchi/Inventory_Management/blob/main/images/Screenshot%202025-06-29%20192649.png) | **Categorical View**: Overstock/stockout distribution |
-| ![Dashboard3](https://github.com/gsaanchi/Inventory_Management/blob/main/images/Screenshot%202025-06-29%20192730.png) | **Forecasting**: Promo uplift, forecast vs actual demand |
+| Screenshot | 
+|-----------|
+| ![Dashboard1](https://github.com/gsaanchi/Inventory_Management/blob/main/images/Screenshot%202025-06-29%20192624.png) 
+| ![Dashboard2](https://github.com/gsaanchi/Inventory_Management/blob/main/images/Screenshot%202025-06-29%20192649.png) 
+| ![Dashboard3](https://github.com/gsaanchi/Inventory_Management/blob/main/images/Screenshot%202025-06-29%20192730.png) 
 
 ## Key Business Insights
 
