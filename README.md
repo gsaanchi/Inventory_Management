@@ -60,7 +60,7 @@ Queries use CTEs, indexing, subqueries, and window functions for scalability.
 ## Dashboard and Visualizations
 
 A Power BI dashboard (`dashboard.pbix`) was developed to communicate insights with decision-makers.
-<img href = "https://github.com/gsaanchi/Inventory_Management/blob/main/images/Screenshot%202025-06-29%20192624.png"></img>
+<img titlte = "something" alt="dashboard" src = "https://github.com/gsaanchi/Inventory_Management/blob/main/images/Screenshot%202025-06-29%20192624.png"></img>
 - ![Inventory vs Sales Regionwise](images/inventory_sales_region.png)
 - ![Promotion vs Non-Promotion Impact](images/promo_impact.png)
 
